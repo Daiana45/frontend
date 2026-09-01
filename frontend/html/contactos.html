@@ -67,7 +67,7 @@
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <form class="form-contactos" id="formContacto">
-                        <div class="text-end mb-2"><i class="bi bi-circle-fill"></i> Servicio en línea</div>
+                        <div class="text-end mb-2 servicio-en-linea"><i class="bi bi-circle-fill"></i> Servicio en línea</div>
                         <label for="nombre">Nombre</label>
                         <input type="text" id="nombre" name="nombre" required>
                         <span class="error" id="error-nombre"></span>
@@ -91,11 +91,13 @@
                         <span class="error" id="error-mensaje"></span>
                         <button type="submit">Enviar Mensaje</button>
                     </form>
-                    
+
                     <div class="from-check mb-3">
                     <input class="form-check-input" type="checkbox" value="" id="terminos" required>
                     <label class="form-check-label" for="terminos">Acepto los <a href="#">terminos y condicicones</a></label>
                 </div>
+                <div id="mensajeExito" class="alert alert-success mt-3 d-none" role="alert">
+                    <i class="bi bi-check-circle-fill"></i>mensaje enviado. te contactaremos pronto</div>
                 </div>
 
                 <div class="col-12 col-lg-6">

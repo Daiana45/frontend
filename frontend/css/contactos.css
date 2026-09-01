@@ -28,13 +28,13 @@ header{
 
 .span1 {
     color: #0F3D2E;
-    font-family: 'Tangerine';
+    font-family: Tangerine;
     font-size: clamp(24px, 5vw, 40px);
     font-weight: bold;
 }
 .span2 {
     color: #FDFBF6;
-    font-family: 'Tangerine';
+    font-family: Tangerine;
     font-size: clamp(24px, 5vw, 40px);
     font-weight: bold;
 }
@@ -67,11 +67,11 @@ header{
 
 .container-principal p{
     color: #5f5e5a;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-left: 5px;
 }
 
-h1{
+.container-principal h1{
     color:#0F3D2E;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 35px;
@@ -80,6 +80,30 @@ h1{
     margin-top: 30px;
     text-shadow: 2px 2px 4px rgba(15, 61, 46, 0.15);
 }
+
+.servicio-en-linea{
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #0F3D2E;
+    display: flex;
+    align-items: center;
+    background-color: #FDFBF6;
+    width: 20%;
+}
+
+.bi-circle-fill{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    animation: parpadear 1.5s infinite alternate;
+}
+@keyframes parpadear {
+    from { opacity: 1; }
+    to { opacity: 0.3; }
+}
+
 
 label {
     color: #0F3D2E;
@@ -106,6 +130,39 @@ input {
     background-color: #FDF8F3;
     font-family: sans-serif;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+select {
+    width: 100%;
+    border: 1px solid #E8DCC8;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #FDF8F3;
+    font-family: sans-serif;
+    transition: all 0.2s ease;
+    color: #0F3D2E;
+    appearance: none;
+    background-position: right 15px center;
+    cursor: pointer;
+}
+
+select:focus {
+    background-color: #FDF8F3;
+    border-color: #D4A017;
+    box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.2);
+    outline: none;
+    color: #0F3D2E;
+}
+
+select option {
+    padding: 10px;
+    background-color: #FDF8F3;
+    color: #0F3D2E;
+}
+
+select option:hover {
+    background-color: #D4A017;
+    color: #FDFBF6;
 }
 
 textarea {
@@ -151,6 +208,43 @@ button {
 button:hover {
     background-color: #D4A017;
     color: #0F3D2E;
+}
+
+.form-check-input {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #B8AE9C;
+    border-radius: 4px;
+    background-color: #FDF8F3;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.form-check-input:checked {
+    background-color: #D4A017;
+    border-color: #D4A017;
+}
+
+.form-check-input:focus {
+    border-color: #D4A017;
+    box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.2);
+}
+
+.form-check-label {
+    color: #0F3D2E;
+    font-size: 14px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.form-check-label a {
+    color: #D4A017;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-check-label a:hover {
+    text-decoration: underline;
 }
 
 .principal {
