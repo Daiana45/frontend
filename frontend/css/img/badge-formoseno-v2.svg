@@ -1,0 +1,13 @@
+<svg width="150" height="36" viewBox="0 0 150 36" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="150" height="36" rx="18" fill="#0B1E3D"/>
+  <g transform="translate(14,7)">
+    <path d="M11 2
+             C6 2 2 6 2 11
+             C2 17 11 22 11 22
+             C11 22 20 17 20 11
+             C20 6 16 2 11 2 Z"
+          fill="#D4A017"/>
+    <circle cx="11" cy="11" r="4" fill="#0B1E3D"/>
+  </g>
+  <text x="42" y="23" font-family="'Segoe UI', sans-serif" font-size="13" fill="#D4A017" font-weight="600">100% formoseño</text>
+</svg>

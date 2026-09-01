@@ -22,38 +22,53 @@
     <link rel="stylesheet" href="../css/inicio.css">
 </head>
 
-<!--primera seccion-->
+
+
+
 
 <body>
     <header>
-        <a class="inicio" href="inicio.html"><span class="span1">Spot</span><span class="span2">Market</span><span
-                class="material-symbols-outlined" aria-hidden="true">
-                shopping_cart
-            </span></a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-0">
+            <a class="inicio navbar-brand" href="inicio.html">
+                <span class="span1">Spot</span><span class="span2">Market</span>
+                <span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span>
+            </a>
 
-        <nav aria-label="navegacion-principal">
-            <ul>
-                <li><a href="inicio.html">inicio</a></li>
-                <li><a href="nosotros.html">nosotros</a></li>
-                <li><a href="contactos.html">contacto</a></li>
-                <li><a href="login.html">Registrate aquí</a></li>
-            </ul>
-        </nav>
-    </header>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto gap-2 py-2 py-lg-0">
+                    <li class="nav-item"><a href="inicio.html">inicio</a></li>
+                    <li class="nav-item"><a href="nosotros.html">nosotros</a></li>
+                    <li class="nav-item"><a href="contactos.html">contacto</a></li>
+                    <li class="nav-item"><a href="login.html">Registrate aquí</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+
 
      <main>
-        <!-- HERO -->
         <section class="section-1">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 order-2 order-lg-1">
                         <h1 class="fw-bold">SpotMarket compara. Vos ahorrás.</h1>
                         <p>Nació de una idea simple: que comprar en Formosa sea más fácil. Acá reunimos comercios,
                             ferias y supermercados para que vos encuentres el mejor precio sin recorrer media ciudad.
                             Menos vueltas, más ahorro.</p>
                         <a href="login.html" class="btn-cta">Empezar ahora</a>
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6 order-1 order-lg-2">
                         <img class="img1" src="../css/img/hero-spotmarket.svg"
                             alt="Ilustración de compras en SpotMarket">
                     </div>
