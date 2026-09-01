@@ -109,6 +109,13 @@ header{
     color: #FDFBF6;
     transform: scale(1.08);
 }
+.section-1 img.img1 {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    animation: flotar 3s infinite;
+}
+
 
 
 

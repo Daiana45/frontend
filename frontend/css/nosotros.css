@@ -1,0 +1,123 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F7F3EA;
+    font-family: 'Times New Roman', Times, serif; 
+    margin: 0;
+}
+
+header{
+    background-color: #E8DCC8;
+    padding: 5px 20px;
+}
+
+.navbar-brand.inicio{
+    border-radius: 15px;
+    background-color: #D4A017;
+    padding: 8px 12px;
+    margin: 0;
+    transition: transform 0.2s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+.navbar-brand.inicio:hover{
+    transform: scale(1.05);
+}
+
+.span1 {
+    color: #0F3D2E;
+    font-family: 'Tangerine';
+    font-size: clamp(24px, 5vw, 40px);
+    font-weight: bold;
+}
+.span2 {
+    color: #FDFBF6;
+    font-family: 'Tangerine';
+    font-size: clamp(24px, 5vw, 40px);
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item a{
+    padding: 10px 15px;
+    background-color: #FDFBF6;
+    border: 1px solid #B8AE9C;
+    border-radius: 10px;
+    color: #0F3D2E;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+.navbar-nav .nav-item a:hover{
+    background-color: #D4A017;
+    color: #FDFBF6;
+    transform: scale(1.1);
+}
+
+
+
+
+
+.section-proposito{
+    background:linear-gradient(135deg, #F7F3EA, #E8DCC8, #D4A017 70%);
+}
+
+.section-proposito h1 {
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #D4A017;
+    text-shadow: 2px 2px 4px rgba(15, 61, 46, 0.25);
+    margin-bottom: 15px;
+}
+
+.section-proposito p{
+    padding-top: 10px;
+    padding-left: 50px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 25px;
+    color: #0F3D2E;
+}
+
+.link-funciona {
+    background-color: transparent;
+    border: 3px solid #0F3D2E;
+    color: #0F3D2E;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 3px;
+    text-align: center;
+    margin-left: 50px;
+    transition: all 0.2s ease;
+}
+
+.link-funciona:hover{
+    background-color: #0F3D2E;
+    color: #D4A017;
+}
+
+.section-proposito img{
+    padding-top: 15px;
+    border-radius: 40px;
+    animation: flotar 6s ease-out 2s infinite alternate both;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+@keyframes flotar {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
