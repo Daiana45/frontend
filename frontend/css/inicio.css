@@ -149,6 +149,8 @@ nav a:hover{
 
 
 
+
+
 .segundo-section {
     padding: 80px 20px;
     background: linear-gradient(to bottom, #FDF8F3, #F2E8D8);
@@ -185,3 +187,115 @@ nav a:hover{
     font-weight: 400;
     max-width: 480px;
 }
+
+
+
+
+.container3 {
+    border-top: 1px solid #f4c768;
+}
+
+.container3 .row {
+    align-items: center;
+}
+
+.texto-acento {
+    border-left: 4px solid #D4A017;
+    padding-left: 25px;
+}
+
+.icono-equipo {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.tercer-section {
+    background: linear-gradient(to bottom, #FDF8F3, #F2E8D8);
+    padding: 80px 20px;
+}
+
+.tercer-section h3 {
+    color: #788417;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.decoracion-hoja {
+    display: block;
+    margin-bottom: 8px;
+    animation: brillar 2s infinite;
+}
+
+@keyframes brillar {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
+.tercer-section p {
+    color: #0F3D2E;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.tercer-section a {
+    background-color: transparent;
+    padding: 0;
+    font-size: 20px;
+    color: #D4A017;
+}
+
+.tercer-section a:hover {
+    background-color: transparent;
+    padding: 0;
+    color: #D4A017;
+}
+
+.tercer-section svg {
+    color: #D4A017;
+}
+
+.flecha-animada {
+    transition: transform 0.3s ease;
+}
+
+.tercer-section a:hover .flecha-animada {
+    transform: translateX(5px);
+}
+
+.tercer-section img {
+    width: 100%;
+    max-width:500px;
+    height: auto;
+    border-radius: 50px;
+    animation: flotar 3s infinite;
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.container1 .row {
+    align-items: flex-start;
+    padding: 15px;
+}
+
