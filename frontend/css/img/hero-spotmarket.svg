@@ -1,0 +1,56 @@
+<svg width="520" height="480" viewBox="0 0 520 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#F6E7B8"/>
+      <stop offset="100%" stop-color="#F2E8D8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Fondo circular suave -->
+  <circle cx="260" cy="230" r="200" fill="url(#bgGlow)"/>
+
+  <!-- Sombra del canasto en el piso -->
+  <ellipse cx="260" cy="410" rx="140" ry="18" fill="#0B1E3D" opacity="0.12"/>
+
+  <!-- Asa del canasto -->
+  <path d="M180 230 Q260 120 340 230" stroke="#0B1E3D" stroke-width="10" fill="none" stroke-linecap="round"/>
+
+  <!-- Cuerpo del canasto -->
+  <path d="M150 240 L370 240 L345 390 Q260 410 175 390 Z" fill="#D4A017"/>
+  <path d="M150 240 L370 240 L363 265 L157 265 Z" fill="#E0B23A"/>
+
+  <!-- Líneas de tejido del canasto -->
+  <path d="M172 265 L182 388" stroke="#B5860F" stroke-width="3" opacity="0.6"/>
+  <path d="M212 265 L216 396" stroke="#B5860F" stroke-width="3" opacity="0.6"/>
+  <path d="M260 265 L260 400" stroke="#B5860F" stroke-width="3" opacity="0.6"/>
+  <path d="M308 265 L304 396" stroke="#B5860F" stroke-width="3" opacity="0.6"/>
+  <path d="M348 265 L338 388" stroke="#B5860F" stroke-width="3" opacity="0.6"/>
+
+  <!-- Producto 1: bolsa/paquete -->
+  <g transform="translate(180,150)">
+    <rect x="0" y="20" width="70" height="60" rx="6" fill="#0B1E3D"/>
+    <rect x="0" y="20" width="70" height="14" rx="6" fill="#123057"/>
+    <path d="M18 20 V6 Q35 -8 52 6 V20" stroke="#D4A017" stroke-width="6" fill="none"/>
+  </g>
+
+  <!-- Producto 2: caja -->
+  <g transform="translate(275,160)">
+    <rect x="0" y="10" width="60" height="55" rx="4" fill="#8B5E1F"/>
+    <rect x="0" y="10" width="60" height="14" fill="#A9752A"/>
+    <line x1="30" y1="24" x2="30" y2="65" stroke="#D4A017" stroke-width="4"/>
+  </g>
+
+  <!-- Etiqueta de precio flotante -->
+  <g transform="translate(340,120) rotate(15)">
+    <path d="M0 15 L15 0 L55 0 Q65 0 65 10 V30 Q65 40 55 40 H15 L0 25 Z" fill="#D4A017"/>
+    <circle cx="14" cy="20" r="5" fill="#0B1E3D"/>
+    <text x="28" y="26" font-family="Georgia, serif" font-size="14" fill="#0B1E3D" font-weight="bold">%</text>
+  </g>
+
+  <!-- Estrellitas decorativas -->
+  <g fill="#D4A017">
+    <path d="M110 110 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z"/>
+    <path d="M400 250 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z"/>
+    <path d="M395 100 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z"/>
+  </g>
+</svg>
