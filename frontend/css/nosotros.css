@@ -126,6 +126,42 @@ header{
 
 
 
+.accordion-button{
+    background-color: #E8DCC8;
+    font-family: 'Times New Roman', Times, serif;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.accordion-item{
+    border-top: 1px solid #D4A017;
+}
+
+.contenedor-reglas {
+    background-color: #FDF8F3;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #E8DCC8;
+    font-family: 'Times New Roman', Times, serif;
+    color: #0F3D2E;
+    box-shadow: none;
+}
+
+.accordion-button:hover{
+    background-color: #D4A017;
+    color: #FDFBF6;
+}
+
+.accordion-body{
+    background-color: #FDF8F3;
+    font-family: 'Times New Roman', Times, serif;
+    color: #0F3D2E;
+}
+
+
+
+
+
 .funcion{
     padding: 80px 20px;
     background-color: #F7F3EA;
