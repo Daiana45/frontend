@@ -76,12 +76,68 @@
 
                 <p>o Inicia sesion con redes sociales</p>
                 <div class="social-icons">
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
-  <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
-</svg></i></a>
+                    <a href=""><i class="bi bi-google"></i></a>
                     <a href=""><i class="bi bi-facebook"></i></a>
                 </div>
             </form>
+        </div>
+        <div class="form-box registrate">
+            <form action="">
+                <h1>Crear Cuenta</h1>
+
+                <div class="input-box">
+                    <input type="text" placeholder="Usuario" required>
+                    <i class="bi bi-person-fill"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" placeholder="Correo o Telefono" required>
+                    <i class="bi bi-envelope-fill"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" placeholder="Contraseña" required id="passwordRegistrate" autocomplete="new-password">
+                    <i class="bi bi-lock-fill"></i>
+                    <i class="bi bi-eye-slash-fill toggle-password" id="toggle-registro"></i>
+                </div>
+
+                <div class="role-box">
+                    <p>Quiero registrarme como:</p>
+                    <div class="role-options">
+                        <input type="radio" name="role" id="role-comprador" value="comprador" checked>
+                        <label for="role-comprador">
+                            <i class="bi bi-cart-fill"></i>
+                            Comprador
+                        </label>
+
+                        <input type="radio" name="role" id="role-vendedor" value="vendedor">
+                        <label for="role-vendedor">
+                            <i class="bi bi-shop"></i>
+                            vendedor
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn-auth">Registrarse</button>
+
+                <p>o registrate con tus redes sociales</p>
+                <div class="social-icons">
+                    <a href=""><i class="bi bi-google"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                </div>
+            </form>
+        </div>
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>¡Bienvenido de nuevo!</h1>
+                <p>¿No tenés una cuenta en SpotMarket?</p>
+                <button class="btn-auth btn-toggle" id="btn-registrate">Registrarse</button>
+            </div>
+
+            <div class="toggle-panel toggle-right">
+                <h1>¡Hola!</h1>
+                <p>¿Ya tenés una cuenta en SpotMarket?</p>
+                <button class="btn-auth btn-toggle" id="btn-login">Iniciar sesion</button>
+            </div>
         </div>
     </div>
 </main>
@@ -136,6 +192,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+        <script src="../js/login.js"></script>
 </body>
 
 </html>
