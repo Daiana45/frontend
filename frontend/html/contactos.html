@@ -66,8 +66,8 @@
         <div class="container principal">
             <div class="row">
                 <div class="col-12 col-lg-6">
-                    <form class="form-contactos" id="formContacto">
-                        <div class="text-end mb-2 servicio-en-linea"><i class="bi bi-circle-fill"></i> Servicio en línea</div>
+                    <form class="form-contactos" id="formContacto" novalidate>
+                        <div class="ms-auto mb-2 servicio-en-linea"><i class="bi bi-circle-fill"></i> Servicio en línea</div>
                         <label for="nombre">Nombre</label>
                         <input type="text" id="nombre" name="nombre" required>
                         <span class="error" id="error-nombre"></span>
@@ -76,7 +76,7 @@
                         <input type="email" id="email" name="email" required>
                         <span class="error" id="error-email"></span>
 
-                        <label for="asunto">asunto</label>
+                        <label for="asunto">Asunto</label>
                         <select name="asunto" id="asunto" required>
                             <option value="" disabled selected>--Selecciona un motivo--</option>
                             <option value="consulta">Consulta General</option>
@@ -94,7 +94,7 @@
 
                     <div class="from-check mb-3">
                     <input class="form-check-input" type="checkbox" value="" id="terminos" required>
-                    <label class="form-check-label" for="terminos">Acepto los <a href="#">terminos y condicicones</a></label>
+                    <label class="form-check-label" for="terminos">Acepto los <a href="../html/terminosycondiciones.html">terminos y condicicones</a></label>
                 </div>
                 <div id="mensajeExito" class="alert alert-success mt-3 d-none" role="alert">
                     <i class="bi bi-check-circle-fill"></i>mensaje enviado. te contactaremos pronto</div>
@@ -191,6 +191,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+        <script src="../js/contactos.js"></script>
 </body>
 
 </html>
