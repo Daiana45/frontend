@@ -50,6 +50,15 @@ form.addEventListener('submit', function (evento) {
         errorAsunto.textContent = '';
     }
 
+     const errorTerminos = document.getElementById('error-terminos');
+
+if (!terminos.checked) {
+    errorTerminos.textContent = 'Tenes que aceptar los terminos y condiciones';
+    esValido = false;
+} else {
+    errorTerminos.textContent = '';
+}
+
     if (mensaje.value.trim() === '') {
         errorMensaje.textContent = 'El mensaje es obligatorio';
         esValido = false;
@@ -57,9 +66,6 @@ form.addEventListener('submit', function (evento) {
         errorMensaje.textContent = '';
     }
 
-    if (!terminos.checked) {
-        esValido = false;
-    } 
     if (esValido) {
         mensajeExito.classList.remove('d-none');
         form.reset();
