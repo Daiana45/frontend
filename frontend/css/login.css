@@ -81,7 +81,7 @@ header{
     position: relative;
     width: 850px;
     max-width: 95%;
-    min-height: 500px;
+    min-height: 620px;
     margin: 60px auto;
     background-color: var(--blanco-hueso);
     border-radius: 30px;
@@ -202,6 +202,10 @@ header{
     color: var(--texto-gris);
     margin-bottom: 8px;
     text-align: left;
+}
+
+.role-options input[type="radio"] {
+    display: none;
 }
 
 .role-options{
@@ -331,30 +335,26 @@ header{
     }
 }
 
-
-
 .auth-container.active .form-box.login {
-    left: -50%;
     opacity: 0;
     z-index: 0;
 }
 
 .auth-container.active .form-box.registrate {
-    left: 0;
     opacity: 1;
     z-index: 5;
 }
 
 .auth-container.active .toggle-box {
-    left: -50%;
+    left: 0%;
 }
 
 .auth-container.active .toggle-left {
-    left: 0;
+    left: -100%;
 }
 
 .auth-container.active .toggle-right {
-    right: -100%;
+    left: 0;
 }
 
 

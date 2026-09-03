@@ -1,20 +1,35 @@
+:root {
+    --beige: #E8DCC8;
+    --verde-oliva: #6b7a3a;
+    --verde-lima: #788417;
+    --error:#b00020;
+    --beige-claro: #F7F3EA;
+    --texto-gris:#5f5e5a;
+    --texto-oscuro:#2A2118;
+    --dorado: #D4A017;
+    --verde: #0F3D2E; 
+    --blanco-hueso: #FDFBF6;
+    --borde: #B8AE9C;
+    --blanco: #FDF8F3;
+}
+
 body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #F7F3EA;
+    background-color:var(--beige-claro);
     font-family: 'Times New Roman', Times, serif; 
     margin: 0;
 }
 
 header{
-    background-color: #E8DCC8;
+    background-color: var(--beige);
     padding: 5px 20px;
 }
 
 .navbar-brand.inicio{
     border-radius: 15px;
-    background-color: #D4A017;
+    background-color: var(--dorado);
     padding: 8px 12px;
     margin: 0;
     transition: transform 0.2s ease;
@@ -27,7 +42,7 @@ header{
 }
 
 .span1 {
-    color: #0F3D2E;
+    color: var(--verde);
     font-family: 'Tangerine';
     font-size: clamp(24px, 5vw, 40px);
     font-weight: bold;
