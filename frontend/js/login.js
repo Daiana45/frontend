@@ -8,8 +8,23 @@ oculto.addEventListener("click", () => {
     } else  {
         contraseña.setAttribute("type", "password")
     }
-})
+});
 
-const usuario = document.getElementById("usuario");
+const usuario = document.getElementById("Usuario");
 const boton = document.getElementById("btn-auth");
+const mensajeError = document.getElementById("mensaje-error");
 
+boton.addEventListener("click", () => {
+    const valorUsuario = usuario.value;
+    const valorContraseña = contraseña.value;
+
+    if (valorUsuario === '' || valorContraseña === '') {
+        mensajeError.textContent = "Faltan datos";
+        return;
+    }
+
+    mensajeError.textContent = "";
+
+    console.log("Usuario:", valorUsuario);
+    console.log("Contraseña:", valorContraseña);
+});
