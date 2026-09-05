@@ -87,12 +87,12 @@
                 <h1>Crear Cuenta</h1>
 
                 <div class="input-box">
-                    <input type="text" placeholder="Usuario" required>
+                    <input type="text" placeholder="Usuario" required id="usuarioRegistro">
                     <i class="bi bi-person-fill"></i>
                 </div>
 
                 <div class="input-box">
-                    <input type="text" placeholder="Correo o Telefono" required>
+                    <input type="text" placeholder="Correo o Telefono" required id="correoTelefono">
                     <i class="bi bi-envelope-fill"></i>
                 </div>
 
@@ -118,7 +118,8 @@
                         </label>
                     </div>
                 </div>
-                <button type="submit" class="btn-auth">Registrarse</button>
+                <button type="submit" class="btn-auth" id="button-registro">Registrarse</button>
+                <p id="mensajeError"></p>
 
                 <p>o registrate con tus redes sociales</p>
                 <div class="social-icons">

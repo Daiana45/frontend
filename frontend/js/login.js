@@ -10,6 +10,11 @@ oculto.addEventListener("click", () => {
     }
 });
 
+
+
+
+
+
 const usuario = document.getElementById("Usuario");
 const boton = document.getElementById("btn-auth");
 const mensajeError = document.getElementById("mensaje-error");
@@ -45,3 +50,29 @@ ojoRegistro.addEventListener("click", () =>{
         passwordRegistrate.setAttribute("type", "password")
     }
 });
+
+
+
+
+
+const usuarioNuevo = document.getElementById("usuarioRegistro");
+const correoTelefono = document.getElementById("correoTelefono");
+const botonRegistro = document.getElementById("button-registro");
+const mensaje = document.getElementById("mensajeError");
+
+botonRegistro.addEventListener("click", (event) => {
+    event.preventDefault();
+    const valorUsuario = usuarioNuevo.value;
+    const valorCorreo = correoTelefono.value;
+    const valorContraseña = passwordRegistrate.value;
+    
+    if (valorUsuario === '' || valorCorreo === '' || valorContraseña === '') {
+        mensaje.textContent = "completa los datos";
+        return;
+    }
+
+    mensaje.textContent = "usuario creado con exito";
+
+    console.log("UsuarioNuevo", valorUsuario);
+    console.log("correoTelefono",valorCorreo);
+}) 
