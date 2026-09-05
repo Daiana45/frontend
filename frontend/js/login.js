@@ -39,8 +39,24 @@ boton.addEventListener("click", (event) => {
 
 
 
+const contenedorPrincipal = document.querySelector(".auth-container");
+const botonToggle = document.getElementById("btn-registrate");
+const botonInicio = document.getElementById("btn-login");
+
+botonToggle.addEventListener("click", () => {
+    contenedorPrincipal.classList.add("active");
+})
+
+botonInicio.addEventListener("click", () => {
+    contenedorPrincipal.classList.remove("active");
+})
+
+
+
+
+
 const passwordRegistrate = document.getElementById("passwordRegistrate");
-const ojoRegistro = document.getElementById("toggle-registrate");
+const ojoRegistro = document.getElementById("toggle-registro");
 
 ojoRegistro.addEventListener("click", () =>{
     const type =passwordRegistrate.getAttribute("type");
