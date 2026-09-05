@@ -71,8 +71,14 @@ botonRegistro.addEventListener("click", (event) => {
         return;
     }
 
-    mensaje.textContent = "usuario creado con exito";
+    const rolSeleccionado = document.querySelector('input[name="role"]:checked');
+    if (!rolSeleccionado) {
+        mensaje.textContent = "seleccione un rol";
+        return;
+    }
 
     console.log("UsuarioNuevo", valorUsuario);
     console.log("correoTelefono",valorCorreo);
+
+     mensaje.textContent = "usuario creado con exito";
 }) 
